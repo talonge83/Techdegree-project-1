@@ -55,7 +55,7 @@ def start_game():
             currentAttempt = chances
             print("You got it, the number was {}!".format(randomNumber))
             if currentAttempt < bestAttempt:
-                #Converts currentAttempt to bestAttempt in the event currentAttempt is lower than previous best.
+                #Converts currentAttempt to bestAttempt in the event currentAttempt is lower than previous best. Also prints new high score.
                 bestAttempt = currentAttempt
                 print("******************\nNew High Score!: !!({})!!\n******************".format(bestAttempt))                
             else:
