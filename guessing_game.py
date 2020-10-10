@@ -31,7 +31,7 @@ def start_game():
         except ValueError:
             print("Not a valid value, please try again..")
             continue
-        if playerGuess > 10:
+        if (playerGuess > 10 or playerGuess < 1):
             print("Not a valid value (must be a number between 1 and 10) Please try again..")
             continue
         if playerGuess < randomNumber:
